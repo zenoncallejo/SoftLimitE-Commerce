@@ -1,0 +1,151 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-image: url(../multimedia/indexMainBG.jpg);    
+  background-size: cover;
+  padding: 3rem;
+}
+
+.titulo{
+  text-align: center;
+  margin: 10px 2rem 10px 2rem;
+  border: 2px solid white;
+  background-color: rgba(240, 248, 255, 0.499);
+  font-weight: bold;
+}
+
+#contenedor_productos {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: rgba(143, 143, 143, 0.767);
+  padding: 10px;
+  margin: 2rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  overflow: hidden;
+}
+
+.imagen_producto {
+  border: 3px solid white;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.imagen_carrito {
+  border: 5px solid white;
+  height: 100px;
+  margin: 15px;
+}
+
+.nombre_producto{
+  text-align: center;
+}
+
+.descripcion_producto{
+  font-style: italic;
+  text-align: left;
+  margin: 15px;
+}
+
+.precio_producto{
+  text-align: right;
+  font-size: 20px;
+  margin: 10px;
+}
+
+#btnAgregar{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#btnAgregar:hover {
+  background-color: rgba(109, 187, 236, 0.828);
+} 
+
+.titulo_carrito{
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn_borrar{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(93, 0, 0);
+  color: white;
+}
+
+.btn_borrar:hover {
+  background-color: red;
+}
+
+.carrito{
+  color: azure;
+  margin: 10px 2rem 10px 2rem;
+  border: 2px solid white;
+  background-color: rgba(66, 66, 66, 0.499);
+}
+
+.titulo_carrito{
+  text-align: center;
+  color: azure;
+  margin: 10px 2rem 10px 2rem;
+}
+
+
+.btn_vaciar{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_vaciar:hover {
+  background-color: rgba(109, 187, 236, 0.828);
+} 
+
+.precio_total{
+  text-align: center;
+  font-weight: bold;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#clima {
+  justify-content: end;
+}
