@@ -198,11 +198,13 @@ btnVaciar.addEventListener("click" , function(){
 })
 
 
-let contenedor = document.getElementById("clima");
+let contenedorClima = document.getElementById("clima");
 
-fetch("https://api.openweathermap.org/data/2.5/weather?q=Buenos%Aires&lang=es&units=metric&appid=de8bc168bddc831d06f67dcef92847b6")
+fetch("https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&lang=es&units=metric&appid=de8bc168bddc831d06f67dcef92847b6")
     .then(response=>response.json())
     .then(data=>{
-        contenedor.innerHTML = `<span> Ciudad: ${data.name}</span>
-                                <span> Temp: ${data.main.temp}</span>`
+        console.log(data)
+        contenedorClima.innerHTML = `<div> Ciudad: ${data.name}</div>
+                                    <div> Temperatura actual: ${data.main.temp}</div>
+                                    <div> Humedad: ${data.main.humidity}%</div>`
     })

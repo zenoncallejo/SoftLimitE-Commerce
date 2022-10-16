@@ -134,6 +134,21 @@ body{
   background-color: rgba(109, 187, 236, 0.828);
 } 
 
+.btn_comprar{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: rgba(75, 255, 75, 0.827);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_comprar:hover {
+  background-color: rgb(161, 255, 169);
+} 
+
 .precio_total{
   text-align: center;
   font-weight: bold;
@@ -147,5 +162,12 @@ table {
 }
 
 #clima {
-  justify-content: end;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.423);
+  border-radius: 100px;
+  background-color: rgba(66, 66, 66, 0.421);
+  color: rgb(197, 190, 190);
+  font-family: 'Open Sans', sans-serif;
+  padding: 30px;
+  margin-bottom: 15px;
 }
